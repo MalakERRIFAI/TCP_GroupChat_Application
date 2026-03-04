@@ -1,0 +1,54 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: #f4f6f9;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 6 14;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Stop button */
+#stopBtn {
+    -fx-background-color: #e74c3c;
+}
+
+#stopBtn:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+}
+
+/* TextArea */
+.text-area {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #dcdde1;
+    -fx-control-inner-background: white;
+    -fx-padding: 8;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #dcdde1;
+}
+
+/* List items */
+.list-cell {
+    -fx-padding: 6 10;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}

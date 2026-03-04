@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.chatapp.client.ui.ClientController">
+
+    <!-- LOGIN PANE -->
+    <VBox fx:id="loginPane" spacing="10" alignment="CENTER" maxWidth="380">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <Label text="Enter Username"/>
+        <TextField fx:id="usernameField" promptText="Leave empty for READ-ONLY mode"/>
+        <Button text="Join Chat" onAction="#onJoin"/>
+        <Label fx:id="loginInfoLabel" textFill="gray"/>
+    </VBox>
+
+    <!-- CHAT PANE -->
+    <BorderPane fx:id="chatPane" visible="false" managed="false">
+
+        <top>
+            <HBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+
+                <Label text="Status:"/>
+                <Label fx:id="statusLabel" text="Offline"/>
+                <Circle fx:id="statusDot" radius="6"/>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Button text="All Users" onAction="#onAllUsers"/>
+                <Button text="Disconnect" onAction="#onDisconnect"/>
+            </HBox>
+        </top>
+
+        <center>
+            <TextArea fx:id="chatArea" editable="false" wrapText="true"/>
+        </center>
+
+        <bottom>
+            <HBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+
+                <TextField fx:id="messageField" promptText="Type message..."/>
+                <Button fx:id="sendBtn" text="Send" onAction="#onSend"/>
+            </HBox>
+        </bottom>
+
+    </BorderPane>
+
+</StackPane>

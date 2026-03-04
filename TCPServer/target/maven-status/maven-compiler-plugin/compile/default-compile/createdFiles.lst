@@ -1,0 +1,8 @@
+com\chatapp\server\ui\ServerController$1.class
+module-info.class
+com\chatapp\server\MainServerApp.class
+com\chatapp\server\model\ClientHandler.class
+com\chatapp\server\ui\ServerView.class
+com\chatapp\server\config\AppConfig.class
+com\chatapp\server\model\ChatServer.class
+com\chatapp\server\ui\ServerController.class

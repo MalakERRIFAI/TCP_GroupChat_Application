@@ -1,0 +1,58 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-background-color: #f4f6f9;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 6 16;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #27ae60;
+}
+
+/* Disconnect button */
+.button:focused {
+    -fx-background-insets: 0;
+}
+
+/* Text fields */
+.text-field {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #dcdde1;
+    -fx-padding: 6;
+}
+
+/* Chat Area */
+.text-area {
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #dcdde1;
+    -fx-control-inner-background: white;
+    -fx-padding: 10;
+    -fx-font-size: 13px;
+}
+
+/* Online indicator styling */
+.label {
+    -fx-font-size: 13px;
+}
+
+/* Login pane */
+#loginPane {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 15, 0, 0, 4);
+}
+
+/* Chat pane */
+#chatPane {
+    -fx-background-color: white;
+}

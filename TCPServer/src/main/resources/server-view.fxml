@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.chatapp.server.ui.ServerController">
+
+    <top>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Button fx:id="startBtn" text="Start Server" onAction="#onStart"/>
+            <Button fx:id="stopBtn" text="Stop Server" onAction="#onStop" disable="true"/>
+            <Label text="Port:"/>
+            <Label fx:id="portLabel" text="----"/>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox spacing="8" prefWidth="220">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Label text="Connected Users"/>
+            <ListView fx:id="usersList"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="8">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Label text="Server Log"/>
+            <TextArea fx:id="logArea" editable="false" wrapText="true"/>
+        </VBox>
+    </center>
+
+</BorderPane>
